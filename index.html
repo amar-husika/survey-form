@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <title>Developers Survey Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Amar Husika">
+        <meta name="description" content="This form collects data about web developers from the Balkans.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="formStyle.css">
+    </head>
+
+
+
+<body>
+    <header>
+
+        <h1 id="title">Developers Survey Form</h1>
+        <p id="description">This form collects data about web developers from the Balkans</p>
+
+    </header>
+
+    <br><br>
+
+    <form id="survey-form">
+
+        <h3>Personal Info</h3>
+
+        <div class="label-div">
+
+
+            <label style="font-weight: 800;" id="name-label" for="name">Name:
+                <input id="name-input" type="text" name="name" id="name" placeholder="Name" required="">
+            </label>
+            <br><br>
+
+
+            <label style="font-weight: 800;" id="email-label" for="email">Email:
+                <input type="email" name="email" id="email" placeholder="name@email.com" required="">
+            </label>
+            <br><br>
+
+            <label style="font-weight: 800;" id="number-label" for="number">Age:
+                <input type="number" name="number" id="number" min="18" max="100" placeholder="18">
+                <br><br>
+            </label>
+
+
+
+            <label style="font-weight: 800;" for="dropdawn">Country: </label>
+            <select id="country" name="dropdawn" id="dropdawn">
+                <option value="Albania">Albania</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Romania">Romania</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Slovenia">Slovenia</option>
+            </select>
+
+            <br>
+
+            <p style="margin-bottom: 3px; font-weight: 800;">Gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br><br>
+
+            <hr>
+
+            <h3>Professional Info</h3>
+
+            <p style="margin-bottom: 3px; font-weight: 800;">Used programming languages:</p>
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id="JavaScript" name="lang" value="JavaScript"><br>
+            <label for="Phyton">Phyton</label>
+            <input type="checkbox" id="Phyton" name="lang" value="Phyton"><br>
+            <label for="Java">Java</label>
+            <input type="checkbox" id="Java" name="lang" value="Java"><br>
+            <label for="C#">C#</label>
+            <input type="checkbox" id="C#" name="lang" value="C#">
+
+            <br><br>
+
+
+            <p style="margin-bottom: 3px; font-weight: 800;">Experience:</p>
+            <label for="one-two">1-2 Years</label>
+            <input type="radio" id="female" name="exp" value="one-two"><br>
+            <label for="three-five">3-5 Years</label>
+            <input type="radio" id="female" name="exp" value="three-five"><br>
+            <label for="five-plus">5+ Years</label>
+            <input type="radio" id="female" name="exp" value="five-plus">
+            <br><br>
+
+            <hr>
+
+            <h3>Feedback</h3>
+
+            <label style="font-weight: 800;" for="comment">Comment: </label>
+            <input type="textarea" name="comment" id="comment">
+            <br><br>
+
+            <hr>
+
+            <div id="end">
+                <button id="sumbit" type="sumbit">SUBMIT</button>
+            </div>
+
+        </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
